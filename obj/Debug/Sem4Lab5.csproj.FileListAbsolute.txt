@@ -1,0 +1,15 @@
+C:\Users\Dimon\source\repos\Sem4Lab5\bin\Debug\Sem4Lab5.exe.config
+C:\Users\Dimon\source\repos\Sem4Lab5\bin\Debug\Sem4Lab5.exe
+C:\Users\Dimon\source\repos\Sem4Lab5\bin\Debug\Sem4Lab5.pdb
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.csproj.AssemblyReference.cache
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\MainWindow.g.cs
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\App.g.cs
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5_MarkupCompile.cache
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5_MarkupCompile.lref
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\MainWindow.baml
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.g.resources
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.Properties.Resources.resources
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.csproj.GenerateResource.cache
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.csproj.CoreCompileInputs.cache
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.exe
+C:\Users\Dimon\source\repos\Sem4Lab5\obj\Debug\Sem4Lab5.pdb

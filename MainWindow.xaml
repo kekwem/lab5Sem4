@@ -1,0 +1,164 @@
+﻿<Window x:Class="Sem4Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sem4Lab5"
+        mc:Ignorable="d"
+        Title="Wypozyczalnia" Height="500" Width="700" FontSize="15">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" BorderBrush="Black"
+                BorderThickness="1"/>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="8" BorderBrush="black" BorderThickness="0,0,0,1"/>
+            <Grid Grid.Row="0" Background="AliceBlue">
+                <Border BorderThickness="1" BorderBrush="black"/>
+                <TextBlock Text="Wprowadz dane" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Imie" VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox x:Name="imieTextBox" Margin="5,0" 
+                             BorderBrush="Black" BorderThickness="1"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Nazwisko" VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox x:Name="nazwiskoTextBox" Margin="5,0" 
+                             BorderThickness="1" BorderBrush="black"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="5" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Cena za komplet" VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox x:Name="cenaTextBox" Margin="5,0" 
+                             BorderThickness="1" BorderBrush="black"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="7" Margin="0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <CheckBox Content="Kask" x:Name="kaskBox" 
+                              HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <CheckBox Content="Gogle" x:Name="gogleBox"
+                              HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <CheckBox Content="Kijki" x:Name="kijkiBox"
+                              HorizontalAlignment="Center"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="9" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <TextBlock Text="Data wypozyczenia"
+                                   HorizontalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Calendar x:Name="kalend_wyp"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <TextBlock Text="Data zwrotu"
+                                   HorizontalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Calendar x:Name="kalend_zwrot"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Border Grid.Column="2" BorderBrush="Black" 
+                BorderThickness="1"/>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="AliceBlue">
+                <Border BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Lista Wypozyczen" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ListBox x:Name="lista_osob"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="button_dodaj" Content="Dodaj" 
+                             Click="button_dodaj_Click" Background="#FFD5F0C4"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="button_usun" Content="Usun" 
+                            Background="#FFFCAFAF" Click="button_usun_Click"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
