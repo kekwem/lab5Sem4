@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sem4Lab5"
         mc:Ignorable="d"
-        Title="Wypozyczalnia" Height="500" Width="700" FontSize="15">
+        Title="Wypozyczalnia" Height="500" MinHeight="500" Width="700" MinWidth="700" FontSize="15">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20*"/>
